@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .img-class{
+      height: 100px;
+      width: 100px;
+    }
+    .custom-bg-color {
+      background-color: #138db3; 
+    }
+    p {
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="custom-bg-color text-white text-center py-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-2 text-left">
+          <img src="event-logo.png" alt="Event Logo" class="img-class">
+        </div>
+        <div class="col-md-8 text-center text-md-center">
+          <h1>Tech Talk 1.0</h1>
+          <p>Welcome to Our Event Registration!</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sessions Table -->
+  <div class="container mt-3">
+    <div class="custom-bg-color text-white p-3 rounded-top text-md-center">
+      <h2>Conference Sessions Schedule</h2>
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Session Name</th>
+          <th scope="col">Speaker</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-toggle="modal" data-target="#sessionModal1">
+          <td>Session 1: Introduction to AI</td>
+          <td>Abdur Rafiq</td>
+          <td>2023-08-20</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+        <tr data-toggle="modal" data-target="#sessionModal2">
+          <td>Session 2: New Norms in Software Engineering</td>
+          <td>Abdus Salam</td>
+          <td>2023-08-20</td>
+          <td>12:00 PM - 2:00 PM</td>
+        </tr>
+        <tr data-toggle="modal" data-target="#sessionModal3">
+          <td>Session 3: Ins & Outs of Large Data Science Applications</td>
+          <td>Shafiqujjaman Shafiq</td>
+          <td>2023-08-20</td>
+          <td>3:00 PM - 5:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Session 1 Modal -->
+<div class="modal fade" id="sessionModal1" tabindex="-1" role="dialog" aria-labelledby="sessionModal1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sessionModal1Label">Session 1: Introduction to AI</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Date:</strong> 2023-08-20</p>
+        <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+        <p><strong>Speaker:</strong> Abdur Rafiq</p>
+        <p><strong>Session Details:</strong> This introductory session on Artificial Intelligence (AI) aims to demystify the concept of AI for both technical and non-technical audiences. The speakers will cover the fundamental concepts of AI, its applications in real-world scenarios, and the potential impact of AI on various industries. The session will include practical examples and case studies to showcase how AI is changing the way we interact with technology and solve complex problems.
+        </p>
+        <p><strong>Speaker Bio:</strong> Abdur Rafiq is a seasoned AI researcher with over a decade of experience on AI. He is a leading AI researcher with over a decade of experience.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="#registrationForm" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Session 2 Modal -->
+<div class="modal fade" id="sessionModal2" tabindex="-1" role="dialog" aria-labelledby="sessionModal2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sessionModal2Label">Session 2: New Norms in Software Engineering</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Date:</strong> 2023-08-20</p>
+        <p><strong>Time:</strong> 12:00 - 2:00 PM</p>
+        <p><strong>Speaker:</strong> Abdus Salam</p>
+        <p><strong>Session Details:</strong> Making software is changing a lot because technology is getting better. This talk will show how things like working fast and cooperating more can help make better software.
+        </p>
+        <p><strong>Speaker Bio:</strong> Abdur Rafiq is a renowned software engineer and agile methodology expert. He has worked with leading tech companies and contributed to the evolution of agile practices.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="#registrationForm" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Session 3 Modal -->
+<div class="modal fade" id="sessionModal3" tabindex="-1" role="dialog" aria-labelledby="sessionModal3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sessionModal3Label">Session 3: Ins & Outs of Large Data Science Applications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Date:</strong> 2023-08-20</p>
+        <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+        <p><strong>Speaker:</strong> Abdus Salam</p>
+        <p><strong>Session Details:</strong> Making software is changing a lot because technology is getting better. This talk will show how things like working fast and cooperating more can help make better software.
+        </p>
+        <p><strong>Speaker Bio:</strong> Abdur Rafiq is a renowned software engineer and agile methodology expert. He has worked with leading tech companies and contributed to the evolution of agile practices.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="#registrationForm" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Registration Form -->
+  <div class="container mt-4">
+    <div class="custom-bg-color text-white p-3 rounded-top text-md-center">
+      <h2>User Registration</h2>
+    </div>
+    <form id="#registrationForm" action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="organization">Organization</label>
+        <input type="text" class="form-control" id="organization" name="organization" required>
+      </div>
+      <div class="form-group">
+        <label for="preferredSession">Preferred Session</label>
+        <select class="form-control" id="preferredSession" name="preferredSession">
+          <option value="session1">Session 1: Introduction to AI</option>
+          <option value="session2">Session 2: New Norms in Software Engineering</option>
+          <option value="session3">Session 3: Ins & Outs of Large Data Science Applications</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+
+<!-- Footer Section -->
+<br>
+<footer class="custom-bg-color text-white py-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Event Details</h4>
+        <p>Tech Talk 1.0</p>
+        <p>Date: August 20, 2023</p>
+        <p>Location: BJIT Academy</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Information</h4>
+        <p>Email: info@techtalk.com</p>
+        <p>Phone: +8801234-567890</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Follow Us</h4>
+        <a href="https://www.Facebook.com/bjit" class="fab fa-facebook ml-0 text-white"> Facebook</a><br>
+        <a href="https://www.twitter.com/bjit" class="fab fa-twitter ml-0 text-white"> Twitter</a><br>
+        <a href="https://www.instagram.com/bjit" class="fab fa-instagram ml-0 text-white"> Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
